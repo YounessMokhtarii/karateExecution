@@ -11,19 +11,7 @@ Feature: first karate api
     * def booksRespnse = karate.callSingle('utils.feature@getBooks')
     * def books = booksRespnse.books
     * configure retry = { count: 5, interval: 1000 }
-    * configure afterScenario =
-    """
-    function(){
-      karate.log('after scenario:', karate.scenario.name)
-    }
     
-    """
-    * configure afterFeature
-    """
-    function(){
-      karate.log('after feature:', karate.feature.name)
-    }
-    """
 
 
  @getBooks
