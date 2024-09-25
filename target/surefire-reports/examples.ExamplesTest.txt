@@ -1,4 +1,10 @@
 -------------------------------------------------------------------------------
 Test set: examples.ExamplesTest
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 7.305 s - in examples.ExamplesTest
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 4.259 s <<< FAILURE! - in examples.ExamplesTest
+testParallel  Time elapsed: 4.255 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: 
+no step-definition method match found for: configure afterFeature
+classpath:examples/features/users.feature:21 ==> expected: <0> but was: <1>
+	at examples.ExamplesTest.testParallel(ExamplesTest.java:26)
+
